@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'android';
+    src: url(../arquivos/fontes/idroid.otf) format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&display=swap');
+
+:root{
+    --cordefundo:#84E0AD;
+    --cor_letra_cabecalho_e_rodape:white;
+    --cordegradecabecalho1:#3CDA83;
+    --cordegradecabecalho2:#2B975B;
+    --cordegradecabecalho3:#1B5B38;
+    --cor_fundo_rodape:#1A5C38;
+    --fontemaintitulo:'android';
+    --fontepadrao:Arial, Helvetica, sans-serif;
+    --fontedestaque:'Kanit', sans-serif;
+}
+body{
+    font-family: var(--fontepadrao);
+    background-color: var(--cordefundo);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cordegradecabecalho1), var(--cordegradecabecalho2), var(--cordegradecabecalho3));
+    color: var(--cor_letra_cabecalho_e_rodape);
+    text-align: center;
+    min-height: 150px;
+    margin: -21px -8px;
+    padding-top: 40px;
+}
+header > h1{
+    font-family: var(--fontedestaque);
+    color: var(--cor_letra_cabecalho_e_rodape);
+    font-weight: bold;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+header>p{
+    font-family: var(--fontepadrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.713);
+}
+nav{
+    text-align: left;
+}
+nav>a{
+    padding: 0px 10px;
+    text-decoration: none;
+    color: var(--cor_letra_cabecalho_e_rodape);
+}
+nav>a:hover{
+    background-color: white;
+    color:var(--cordegradecabecalho2) ;
+}
+main{
+    background-color:var(--cordefundo) ;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    line-height: 2em;
+}
+main strong{
+    color: var(--cordegradecabecalho2);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+main a {
+    text-decoration: none;
+    background-color: var(--cordegradecabecalho1);
+    color: var(--cordegradecabecalho3);
+}
+main a:hover{
+    text-decoration: underline;
+}
+article{
+    background-color: white;
+    padding: 10px 32px;
+    margin: 22px 76px;
+    border-radius: 0px 0px 15px 15px;
+}
+article > h2, h3{
+    font-family: var(--fontemaintitulo);
+}
+article > h3 {
+    background-image: linear-gradient(to right, var(--cordegradecabecalho1),var(--cor_letra_cabecalho_e_rodape));
+}
+img{
+    width: 100%;
+}
+.imgpequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div.video{
+    background-color: var(--cordegradecabecalho3);
+    margin: 0px -32px 30px -32px;
+    padding: 20px;
+
+    padding-bottom: 58.9%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+article > .extra{
+    background-color: var(--cordegradecabecalho1);
+    margin: 20px 0px;
+    padding: 0px 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+article > div > ul{
+    columns: 2;
+}
+article #extra{
+    background-color: var(--cordegradecabecalho3);
+    color: var(--cor_letra_cabecalho_e_rodape);
+    font-weight: bold;
+    margin: 0px -20px;
+    border-radius: 15px 15px 0px 0px;
+    padding: 0px 5px;
+}
+footer{
+    background-color: var(--cor_fundo_rodape);
+    color: var(--cor_letra_cabecalho_e_rodape);
+}
+footer >p{
+    margin: -11px;
+    text-align: center;
+    padding: 0px 0px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor_letra_cabecalho_e_rodape);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cordefundo);
+}
